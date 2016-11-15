@@ -42,8 +42,9 @@ Impala > Configuration > Sentry Service 에 Sentry 체크
 Hue 에서 jackson으로 로그인하면 일단 모든 테이블이 보인다.<br>
 cho로 로그인하면 뭔가가 다르다.
 
-
-
+## 참고
+https://www.cloudera.com/documentation/enterprise/5-6-x/topics/sg_sentry_service_config.html
+https://www.cloudera.com/documentation/enterprise/5-3-x/topics/sg_hive_sql.html
 
 
 
