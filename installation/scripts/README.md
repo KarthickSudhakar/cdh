@@ -1,6 +1,16 @@
 # Scripts
+
 Download rpms to install CM&CDH for Local Repository
 ```
-common.sh
-sync-cache.sh
+download-rpms
+```
+
+Install CM and CDH
+```
+install-cdh
+```
+
+Check prereq
+```
+prereq-checks-master
 ```
