@@ -16,13 +16,13 @@ CREATE ROLE read_auth;
 CREATE ROLE write_auth;
 ```
 
-## 모든 테이블에 읽기권한을 준다.
+## 모든 테이블에 읽기권한을 준다.(Group selector)
 ```
 GRANT SELECT ON DATABASE default TO ROLE read_auth;
 GRANT ROLE read_auth TO GROUP selector;
 ```
 
-## sample07 테이블만 쓰기권한을 준다
+## sample07 테이블만 쓰기권한을 준다(Group inserter)
 ```
 REVOKE ALL ON DATABASE default FROM ROLE write_auth;
 GRANT SELECT(description) ON TABLE sample_07 TO ROLE write_auth;
