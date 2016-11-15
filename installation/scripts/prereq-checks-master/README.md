@@ -69,7 +69,3 @@ Some items on the roadmap:
 
 - More checks (e.g. hostname and DNS resolution)
 - Check a list of servers instead of just localhost
-
-## Contributions
-
-Please report any bugs or feature requests using the Github Issues here. Better yet, send pull requests! For everything else, contact James Tan via <jtan@cloudera.com>.
