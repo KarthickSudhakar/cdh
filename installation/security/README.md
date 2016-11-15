@@ -2,7 +2,7 @@
 Kerberized 일단 제외.(원래는 필수)<br>
 Impala에 적용
 
-## 모든 노드에 리눅스 그룹&유저 생성
+## 모든 노드에 리눅스 그룹&유저 생성(Console)
 ```
 $ sudo groupadd selector
 $ sudo groupadd inserter
@@ -29,16 +29,16 @@ GRANT SELECT(description) ON TABLE sample_07 TO ROLE write_auth;
 GRANT ROLE write_auth TO GROUP inserter;
 ```
 
-## Hue에 사용자 생성
+## Hue에 사용자 생성(Hue WebUI)
 사용자 관리에서 jackson, cho 생성한다.
 
-## Sentry 설정에서 관리자 그룹 등록
+## Sentry 설정에서 관리자 그룹 등록(CM)
 Sentry > Configuration > Admin Groups 에 selector, inserter 추가.
 
-## Sentry 가 보초를 설 Impala 설정
+## Sentry 가 보초를 설 Impala 설정(CM)
 Impala > Configuration > Sentry Service 에 Sentry 체크
 
-## 이제 테스트 해보자
+## 이제 테스트 해보자(Hue WebUI)
 Hue 에서 jackson으로 로그인하면 일단 모든 테이블이 보인다.<br>
 cho로 로그인하면 뭔가가 다르다.
 
