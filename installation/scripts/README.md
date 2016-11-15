@@ -1,5 +1,5 @@
 # Scripts
-Download rpms for installation of CM&CDH
+Download rpms to install CM&CDH for Local Repository
 ```
 common.sh
 sync-cache.sh
