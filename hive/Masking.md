@@ -135,3 +135,6 @@ ERROR: AuthorizationException: User 'b' does not have privileges to execute 'SEL
 | 3   | Jane Doe   | ***-**-0880 | PRIVATE |
 +-----+------------+-------------+---------+
 ```
+
+#참고
+https://wiki.cloudera.com/pages/viewpage.action?spaceKey=~jeremy&title=Data+masking+using+Sentry
