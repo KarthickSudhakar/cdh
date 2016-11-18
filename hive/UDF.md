@@ -12,7 +12,7 @@ sudo -u hive hadoop fs -put /root/hive-udfs.jar /user/hive/lib
 
 3. create user-defined function (permanent)
 ```
-CREATE FUNCTION ssnMasking AS 'com.cloudera.ps.udf.SsnMasking' USING JAR 'hdfs://	ip-10-0-0-201.ap-northeast-2.compute.internal/user/hive/lib/hive-udfs.jar';
+CREATE FUNCTION ssnMasking AS 'com.cloudera.ps.udf.SsnMasking' USING JAR 'hdfs://ip-10-0-0-201.ap-northeast-2.compute.internal/user/hive/lib/hive-udfs.jar';
 ```
 
 4. test
