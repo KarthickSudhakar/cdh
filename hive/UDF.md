@@ -2,7 +2,7 @@
 
 1. upload jar to HDFS
 ```
-sudo -u hive hadoop fs -put /root/HiveUDFs-0.0.1-SNAPSHOT.jar /user/hive/lib
+sudo -u hive hadoop fs -put /root/hive-udfs.jar /user/hive/lib
 ```
 
 2. connect hive2 server with beeline
