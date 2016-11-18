@@ -64,3 +64,25 @@ INFO  : OK
 +-------------+--------------+----------+--+
 3 rows selected (12.398 seconds)
 ```
+
+java code
+```
+package com.cloudera.ps.udf;
+
+import org.apache.commons.lang.StringUtils;
+import org.apache.hadoop.hive.ql.exec.UDF;
+import org.apache.hadoop.io.Text;
+
+public class SsnMasking extends UDF {
+
+    private Text result = new Text();
+
+    public Text evaluate(Text str) {
+        if (str == null) {
+            return null;
+        }
+        result.set("***-**-" + StringUtils.substring(StringUtils.trim(str.toString()), 7, 12));
+        return result;
+    }
+}
+```
