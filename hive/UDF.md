@@ -65,7 +65,7 @@ INFO  : OK
 3 rows selected (12.398 seconds)
 ```
 
-java code
+5. java code
 ```
 package com.cloudera.ps.udf;
 
