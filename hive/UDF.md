@@ -86,3 +86,5 @@ public class SsnMasking extends UDF {
     }
 }
 ```
+# 참고
+http://www.cloudera.com/documentation/enterprise/latest/topics/cm_mc_hive_udf.html (fail)
