@@ -1,5 +1,8 @@
 # Kerberos
 
+# kdb5_util create -r JACKSON.CLOUDERA.COM -s (when hanging and freezing)
+https://www.digitalocean.com/community/tutorials/how-to-setup-additional-entropy-for-cloud-servers-using-haveged
+
 # Reference
 https://docs.oracle.com/cd/E26925_01/html/E25888/intro-25.html
 http://blog.naver.com/PostView.nhn?blogId=nahaeya100&logNo=140122278976
