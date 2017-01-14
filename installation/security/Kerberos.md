@@ -4,12 +4,17 @@ Install MID Kerberos Server
 ```
 yum install krb5-libs krb5-server
 /var/kerberos/krb5kdc/kdc.conf
-kdb5_util create -s -r EUREKAHADOOPDV.COM
+kdb5_util create -s -r HADOOP.COM
 /var/kerberos/krb5kdc/kadm5.acl
 kadmin.local addprinc -pw EUREKA2016 cloudera-scm/admin@EUREKAHADOOPTS.COM
 service krb5kdc start
 service kadmin start
 ```
+If you have hang with the message below, that is because of Entropy
+```
+Loading random data
+```
+http://www.cloudera.com/documentation/enterprise/5-8-x/topics/encryption_prereqs.html
 
 
 1. kdb5_util create -r JACKSON.CLOUDERA.COM -s (when hanging and freezing)
