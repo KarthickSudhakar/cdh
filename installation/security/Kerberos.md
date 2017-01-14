@@ -6,9 +6,9 @@ yum install krb5-libs krb5-server
 /var/kerberos/krb5kdc/kdc.conf
 kdb5_util create -s -r HADOOP.COM
 /var/kerberos/krb5kdc/kadm5.acl
-kadmin.local addprinc -pw EUREKA2016 cloudera-scm/admin@EUREKAHADOOPTS.COM
 service krb5kdc start
 service kadmin start
+kadmin.local addprinc -pw cloudera cloudera-scm/admin@JACKSON.HADOOP.COM
 ```
 If you have hang with the message below, that is because of Entropy
 ```
