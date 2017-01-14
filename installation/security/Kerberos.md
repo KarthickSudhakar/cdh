@@ -1,5 +1,17 @@
 # Kerberos
 
+Install MID Kerberos Server
+```
+yum install krb5-libs krb5-server
+/var/kerberos/krb5kdc/kdc.conf
+kdb5_util create -s -r EUREKAHADOOPDV.COM
+/var/kerberos/krb5kdc/kadm5.acl
+kadmin.local addprinc -pw EUREKA2016 cloudera-scm/admin@EUREKAHADOOPTS.COM
+service krb5kdc start
+service kadmin start
+```
+
+
 1. kdb5_util create -r JACKSON.CLOUDERA.COM -s (when hanging and freezing)
 https://www.digitalocean.com/community/tutorials/how-to-setup-additional-entropy-for-cloud-servers-using-haveged
 https://www.cloudera.com/documentation/enterprise/latest/topics/encryption_prereqs.html#concept_by1_pv4_y5
